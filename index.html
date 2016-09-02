@@ -48,7 +48,42 @@ php artisan --quiet VAGY -q
 php artisan --version OR -V
 // -v|vv|vvv Növeli a beszédesség mértékét: v normál mód, vv több információ, vvv debug mód
 php artisan --verbose
-            </pre>
+
+
+// Lefordított class törlése
+php artisan clear-compiled
+// Alkalmazás ideiglenes felfüggesztése
+php artisan down
+// Aktuális futtatókörnyezet lekérdezése
+php artisan env
+// Súgó
+php artisan help
+// Adatbázis migráció
+php artisan migrate
+// Sebesség optimalizáció
+php artisan optimize
+// Kiszolgálása a php beépített webszerverén keresztül
+php artisan serve
+// Interaktív konzol
+php artisan tinker
+// Ideiglenes felfüggesztés vége
+php artisan up
+
+
+// Route -ok gyorsítótárazása
+php artisan route:cache
+// Route gyorsítótár törlése
+php artisan route:clear
+// Route -ok listázása
+php artisan route
+
+
+// Assetek publisholása a külső csomagokból
+php artisan vendor:publish
+
+
+// Lefordított view cache törlése
+php artisan view:clear</pre>
             </div>
         </div>
     </div>
@@ -60,8 +95,16 @@ php artisan --verbose
             </div>
             <div class="panel-body">
                 <pre class="prettyprint  lang-php">
-Content
-                </pre>
+// Új Laravel telepítése
+composer create-project --prefer-dist laravel/laravel mappa
+// Composer csomagok telepítése
+composer install
+// Csomagok frissítése
+composer update
+// Az autoloader újragenerálása
+composer dump-autoload [--optimize]
+// Composer verzió frissítése
+composer self-update</pre>
             </div>
         </div>
     </div>
@@ -72,7 +115,11 @@ Content
                 <h3 class="panel-title">Config</h3>
             </div>
             <div class="panel-body">
-Content
+                <pre class="prettyprint  lang-php">
+// Config érték lekérdezése (app.php -ból)
+Config::get('app.locale')
+// Config érték futásidejű megváltoztatása
+Config::set('database.default', 'mysql');</pre>
             </div>
         </div>
     </div>
