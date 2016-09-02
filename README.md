@@ -16,6 +16,8 @@ Irányadó: https://github.com/laravelhungary/docs/wiki/Kifejez%C3%A9sek
 Nem másolatot készítünk, de az inspirációt ezek adhatják, hasonló a terv a jelen projektben is:
 
 http://cheats.jesse-obrien.ca/
+
 http://learninglaravel.net/cheatsheet/
+
 http://www.linxiang.info/l5-cs/
 
